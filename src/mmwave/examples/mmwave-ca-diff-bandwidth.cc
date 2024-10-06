@@ -62,7 +62,8 @@ main(int argc, char* argv[])
     double totalBandwidth = 800e6;
     double frequency0 = 28e9;
     double frequency1 = 73e9;
-    double simTime = 1;
+    double simTime = 20;
+    double ueNum = 10;
     std::string condition =
         "l"; // channel condition, l = LOS, n = NLOS, otherwise the condition is randomly determined
 
@@ -236,7 +237,7 @@ main(int argc, char* argv[])
 
     // create ue node
     NodeContainer ueNodes;
-    ueNodes.Create(1);
+    ueNodes.Create(ueNum);
 
     // set mobility
     MobilityHelper uemobility;

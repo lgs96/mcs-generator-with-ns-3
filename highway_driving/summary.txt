@@ -1,0 +1,40 @@
+RNTI 1:
+  MCS - Length: 846, Avg: 27.46, Std: 1.68
+  SINR - Avg: 28.26, Std: 4.31
+
+RNTI 2:
+  MCS - Length: 880, Avg: 25.98, Std: 2.33
+  SINR - Avg: 22.78, Std: 4.10
+
+RNTI 3:
+  MCS - Length: 851, Avg: 23.08, Std: 2.74
+  SINR - Avg: 18.34, Std: 2.93
+
+RNTI 4:
+  MCS - Length: 738, Avg: 22.86, Std: 4.38
+  SINR - Avg: 18.55, Std: 4.59
+
+RNTI 5:
+  MCS - Length: 796, Avg: 23.67, Std: 3.14
+  SINR - Avg: 19.17, Std: 3.47
+
+RNTI 6:
+  MCS - Length: 719, Avg: 23.10, Std: 2.93
+  SINR - Avg: 18.40, Std: 3.04
+
+RNTI 7:
+  MCS - Length: 788, Avg: 19.14, Std: 6.21
+  SINR - Avg: 14.85, Std: 5.21
+
+RNTI 8:
+  MCS - Length: 738, Avg: 15.75, Std: 4.22
+  SINR - Avg: 11.80, Std: 3.35
+
+RNTI 9:
+  MCS - Length: 799, Avg: 12.37, Std: 3.54
+  SINR - Avg: 9.38, Std: 2.70
+
+RNTI 10:
+  MCS - Length: 761, Avg: 16.57, Std: 4.76
+  SINR - Avg: 12.60, Std: 3.70
+

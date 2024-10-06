@@ -292,6 +292,7 @@ MmWavePhyTrace::RxPacketTraceEnbCallback(Ptr<MmWavePhyTrace> phyStats,
             NS_FATAL_ERROR("Could not open tracefile");
         }
     }
+    /*
     m_rxPacketTraceFile << "UL\t" << Simulator::Now().GetSeconds() << "\t" << params.m_frameNum
                         << "\t" << +params.m_sfNum << "\t" << +params.m_slotNum << "\t"
                         << +params.m_symStart << "\t" << +params.m_numSym << "\t" << params.m_cellId
@@ -310,6 +311,7 @@ MmWavePhyTrace::RxPacketTraceEnbCallback(Ptr<MmWavePhyTrace> phyStats,
                      << 10 * std::log10(params.m_sinr) << "\t" << params.m_tbler << "\t"
                      << params.m_corrupt << "\t" << params.m_sinrMin);
     }
+    */
 }
 
 } // namespace mmwave
