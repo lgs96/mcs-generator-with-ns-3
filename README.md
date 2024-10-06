@@ -3,21 +3,29 @@
 This is an [ns-3](https://www.nsnam.org "ns-3 Website") module for the simulation
 of 5G cellular networks operating at mmWaves. A description of this module can be found in [this paper](https://ieeexplore.ieee.org/document/8344116/ "mmwave paper").
 
-Main features:
+## How to Run and Process Logs (The objective of this repository)
 
-* Support of a wide range of channel models, including the model based on 3GPP TR 38.901 for frequencies between 0.5 and 100 GHz. Ray tracing and measured traces can also be used.
+To get MCS and SINR logs, follow these steps:
 
-* Custom PHY and MAC classes supporting the 3GPP NR frame structure and numerologies.
+**Example Parameters**:
+```cpp
+double frequency0 = 3.5e9;
+double simTime = 20;
+double txPower = 10;
+double ueNum = 10;
+double ueSpeed = 9.7;  // Speed in meters per second (e.g., urban driving: 9.7m/s)
+```
+1. Set the parameters in scratch/mmwave-ca-same-bandwidth.cc.
+2.  Run the simulation using this command:
+```
+. /ns3 run scratch/mmwave-ca-same-bandwidth.cc
+```
+3. After running the simulation, process the logs using this Python script:
+```
+python3 process_log.py
+```
+The output can be seen in the output_logs folder, where separate CSV files for MCS and SINR values will be generated.
 
-* Custom schedulers for supporting dynamic TDD formats
-
-* Carrier Aggregation at the MAC layer
-
-* Enhancements to the RLC layer with re-segmentation of packets for retransmissions
-
-* Dual Connectivity with LTE base stations, with fast secondary cell handover and channel tracking
-
-* Simulation of core network elements (with also the MME as a real node)
 
 ## Installation
 This repository contains a complete ns-3 installation with the addition of the mmwave module. 
